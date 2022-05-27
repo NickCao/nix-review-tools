@@ -37,7 +37,7 @@ module Hydra::Fetch
   # Gets the full eval data from hydra.
   def self.eval(id)
     _get(
-      "https://hydra.nixos.org/eval/#{id}?full=1",
+      "https://hydra.nichi.co/eval/#{id}?full=1",
       "eval_#{id}"
     )
   end
@@ -45,7 +45,7 @@ module Hydra::Fetch
   # Gets the full build data from hydra.
   def self.build(id)
     _get(
-      "https://hydra.nixos.org/build/#{id}",
+      "https://hydra.nichi.co/build/#{id}",
       "build_#{id}"
     )
   end
@@ -54,7 +54,7 @@ module Hydra::Fetch
   def self.jobset_summary(project, name)
     # This is never cached.
     _get(
-      "https://hydra.nixos.org/jobset/#{project}/#{name}"
+      "https://hydra.nichi.co/jobset/#{project}/#{name}"
     )
   end
 end

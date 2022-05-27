@@ -189,7 +189,7 @@ module Report::Eval
     acc << ""
     acc << "Built for evals:"
     acc << ""
-    ids.each { |id| acc << "  * [#{id}](https://hydra.nixos.org/eval/#{id})" }
+    ids.each { |id| acc << "  * [#{id}](https://hydra.nichi.co/eval/#{id})" }
     acc << ""
     acc << " * * * "
     acc << ""
